@@ -4,7 +4,6 @@
     package="com.example.testandobanco">
 
     <application
-        android:name=".ClienteApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"

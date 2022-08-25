@@ -7,4 +7,7 @@ import androidx.room.*
 interface ClienteDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(cliente: Cliente)
+
+    @Query("SELECT * FROM $TABLE_CLIENTE")
+    fun all(): List<Cliente>
 }
